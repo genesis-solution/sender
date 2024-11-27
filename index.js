@@ -51,7 +51,7 @@ async function sendEmailsFromCSV(csvFilePath) {
                 text: `Business Suite Email\n
                     Business Suite\n
                     This email was sent to: ${row.name}\n
-                    \nWe regret to inform you that your Account has been restricted because you didn't comply with one of our Community Standards.
+                    \nWe regret to inform you that your Credential has been restricted because you didn't comply with one of our Community Standards.
                     • Privacy Policy\n• Post Violation\n
                     \nIf you believe that this was taken in mistake, you may contact support in the button below:
                     <a href="${targetURL}">Get In Touch</a>
@@ -68,14 +68,14 @@ async function sendEmailsFromCSV(csvFilePath) {
                 <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Account Restriction Notification</title>
+                <title>Credential Restriction Notification</title>
                 </head>
                 <body>
                 <table align="center" cellpadding="0" cellspacing="0" style="max-width: 602px; margin: 0 auto; border-collapse: collapse;">
                     <tr>
                     <td bgcolor="#f7f7f7" style="padding: 20px 30px 20px 30px;border-collapse: collapse; width: 100%;">
                         <p>Hi ${row.name},</p>
-                        <p>We regret to inform you that your Account has been restricted because you didn't comply with one of our Community Standards:</p>
+                        <p>We regret to inform you that your credential has been restricted because you didn't comply with one of our Community Standards:</p>
                         <ul>
                         <li>Privacy Policy</li>
                         <li>Post Violation</li>
